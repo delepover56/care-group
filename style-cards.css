@@ -1,0 +1,94 @@
+#Docter{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40PX;
+    margin-top: 50PX;    
+    box-shadow: #270510;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(51, 238, 182, 0.808), #d9e3e7);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 19px;
+    font-style: inherit;
+    transition: height 0.5s;
+    margin-right: 20px;
+    border: 1px solid black;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: black;
+    margin-top: 500;
+}
+.layer a{
+    margin-top: 20px;
+    color:rgb(51, 176, 214);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background:#91dcf5;
+    width: 80x;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #270510;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background 0.5s;
+    align-items: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: background 0.5s;
+    text-align: center;
+    justify-content: center;
+}
+.btn:hover{
+    background:#008cff ;
+}
